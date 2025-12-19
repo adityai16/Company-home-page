@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova - Innovating the Future</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f7fa;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+        .hero .logo-big {
+            font-size: 80px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+        .hero .tagline {
+            font-size: 28px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        .hero .btn {
+            padding: 15px 40px;
+            background: #00d4ff;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: 0.3s;
+            box-shadow: 0 10px 30px rgba(0,212,255,0.4);
+        }
+        .hero .btn:hover {
+            background: white;
+            color: #222;
+            transform: scale(1.05);
+        }
+
+        /* ===== NAVIGATION ===== */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0,0,0,0.9);
+            padding: 15px 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+        nav {
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 25px;
+            font-size: 18px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+        nav a:hover { color: #00d4ff; }
+
+        /* ===== SECTIONS ===== */
+        section {
+            padding: 100px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1, h2 { text-align: center; margin-bottom: 40px; color: #222; font-size: 36px; }
+
+        .about-text {
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        /* Services */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .service-card {
+            background: white;
+            padding: 35px 20px;
+            text-align: center;
+            border-radius: 18px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            font-size: 19px;
+            transition: all 0.4s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-12px);
+            background: #007bff;
+            color: white;
+            box-shadow: 0 20px 40px rgba(0,123,255,0.3);
+        }
+
+        /* Team */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 35px;
+            margin-top: 50px;
+        }
+        .team-member {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .team-member img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+        .team-member h3 { margin: 20px 0 8px; font-size: 22px; }
+        .team-member p { color: #666; font-size: 16px; padding: 0 15px 20px; }
+
+        /* Contact */
+        .contact-info {
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 22px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <div class="logo-big">TechNova</div>
+        <div class="tagline">Innovating the Future of Technology</div>
+        <a href="#about" class="btn">Explore Our Vision</a>
+    </div>
+
+    <!-- FIXED NAVIGATION -->
+    <header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#team">Team</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h1>About Us</h1>
+        <p class="about-text">
+            TechNova is a forward-thinking tech company focused on delivering cutting-edge digital solutions for businesses worldwide. 
+            We are a dynamic technology company committed to driving innovation and shaping the digital future. Founded with the vision 
+            of simplifying complex challenges through smart solutions, we specialize in software development, artificial intelligence, 
+            cloud platforms, and cybersecurity. With a customer-first approach and a diverse team of passionate experts, 
+            TechNova empowers organizations to thrive in the digital age. We go beyond technology delivery to become a trusted partner 
+            in innovation and growth.
+        </p>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+        <h1>Our Services</h1>
+        <div class="services-grid">
+            <a href="cybersecurity.html" class="service-card">Cybersecurity Intelligence</a>
+            <a href="mobile-app.html" class="service-card">Mobile App Design</a>
+            <a href="cloud.html" class="service-card">Cloud Computing</a>
+            <a href="data-analysis.html" class="service-card">Data Analysis</a>
+            <a href="web-development.html" class="service-card">Web Development</a>
+            <a href="it-consulting.html" class="service-card">IT Consulting</a>
+        </div>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team">
+    <h1>Meet the Team</h1>
+    <div class="team-grid">
+      <a href="dexter.html" class="team-card">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dexter">
+        <h3>Dexter Morgan</h3>
+        <p>CEO & Cyber Security Analyst</p>
+      </a>
+      <a href="john.html" class="team-card">
+        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="John">
+        <h3>John Smith</h3>
+        <p>Chief Technology Officer</p>
+      </a>
+      <a href="jane.html" class="team-card">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Jane">
+        <h3>Jane Doe</h3>
+        <p>Lead Designer</p>
+      </a>
+    </div>
+  </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <div class="contact-info">
+            Email: info@technova.com<br><br>
+            Phone: +1 (555) 123-4567<br><br>
+            Address: 123 Innovation Drive, Silicon Valley, CA 94025
+        </div>
+    </section>
+
+</body>
+</html>
